@@ -21,7 +21,7 @@ const Header = () => {
       <Navbar.Brand as={Link} to="/"
         className="brand-name"> 
         <span className="display-4 text-white ho"> 
-          Geek 
+          Anas Zulkifli 
         </span> 
       </Navbar.Brand> 
       <button 
@@ -60,12 +60,12 @@ const Header = () => {
           </Nav.Link> 
         </Nav> 
         <Nav className="ml-auto"> 
-          <Nav.Link href="https://github.com/yourusername"> 
+          <Nav.Link href="https://github.com/Zer0-01"> 
             <span className="sr-only">Github</span> 
             <FontAwesomeIcon icon={faGithub} size="lg"
               className='text-light ho' /> 
           </Nav.Link> 
-          <Nav.Link href="https://linkedin.com/in/yourusername"> 
+          <Nav.Link href="https://linkedin.com/in/anas-zulkifli-mohd-jeffry"> 
             <span className="sr-only">Linkedin</span> 
             <FontAwesomeIcon icon={faLinkedin} size="lg"
               className='text-light ho' /> 
