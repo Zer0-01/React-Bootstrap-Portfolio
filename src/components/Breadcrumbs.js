@@ -13,7 +13,21 @@ const Breadcrumbs = ({ paths }) => {
                         {/* Home */}
                     </Link>
                 </li>
-
+                {paths.map((path, index) => (
+                    <li key={index}
+                        className={
+                            `breadcrumb-item${index === paths.length - 1 ?
+                                ' active' : ''}`
+                        }>
+                        {index !== paths.length - 1 ? (
+                            <Link to={path.to}>
+                                {path.title}
+                            </Link>
+                        ) : (
+                            <span>{path.title}</span>
+                        )}
+                    </li>
+                ))}
             </ol>
         </nav>
     );
